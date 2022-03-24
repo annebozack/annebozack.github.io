@@ -10,9 +10,9 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js'],
   },
   output: {
-    path: path.join(__dirname, '/'),
+    path: path.join(__dirname, '/dist'),
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '/dist',
   },
   module: {
     rules: [
