@@ -7,5 +7,4 @@ export const ResearchPageWrapper = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: thistle;
 `;

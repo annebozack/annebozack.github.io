@@ -16,6 +16,12 @@ const GlobalStyle = createGlobalStyle`
 
   a:link {
     text-decoration: none;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
 `;
 
 export default GlobalStyle;
