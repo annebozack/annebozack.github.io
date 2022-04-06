@@ -6,6 +6,7 @@ export const LandingPageWrapper = styled.div`
   flex: 1;
   width: 100%;
   align-items: center;
+  // overflow: hidden;
 `;
 
 export const Header = styled.h1``;

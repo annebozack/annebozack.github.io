@@ -1,11 +1,23 @@
-import React, { FC } from 'react';
-import { HamburgerWrapper, HamburgerPatty, HamburgerContent, MenuTriangle } from './hamburger.css';
+import React, { FC, useState } from 'react';
+import { NavRoutes } from '../../types';
+import { HamburgerWrapper, HamburgerPatty, HamburgerContent, NavItem, Triangle } from './hamburger.css';
 
-interface HambugerProps {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-}
-const Hamburger: FC<HambugerProps> = ({ isOpen, setIsOpen, children }) => {
+const navConfig = [
+  { display: 'Anne Bozack', route: NavRoutes.Root },
+  { display: 'About', route: NavRoutes.About },
+  { display: 'Research', route: NavRoutes.Reasearch },
+  { display: 'Projects', route: NavRoutes.Projects },
+];
+
+const Hamburger: FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navigationOptions = navConfig.map(({ display, route }) => (
+    <NavItem key={route} to={route} isOpen={isOpen}>
+      {display}
+    </NavItem>
+  ));
+
   const handleHamburgerClick = () => {
     setIsOpen(!isOpen);
   };
@@ -15,8 +27,8 @@ const Hamburger: FC<HambugerProps> = ({ isOpen, setIsOpen, children }) => {
       <HamburgerPatty />
       <HamburgerPatty />
       <HamburgerPatty />
-      {/* <MenuTriangle /> */}
-      <HamburgerContent isOpen={isOpen}>{children}</HamburgerContent>
+      <Triangle isOpen={isOpen} />
+      <HamburgerContent isOpen={isOpen}>{navigationOptions}</HamburgerContent>
     </HamburgerWrapper>
   );
 };
