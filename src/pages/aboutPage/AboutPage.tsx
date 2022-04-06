@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import { AboutPageWrapper, MyHeader } from './aboutPage.css';
+import { AboutPageWrapper, Header } from './aboutPage.css';
 
 const AboutPage: FC = () => {
   return (
     <AboutPageWrapper>
-      <MyHeader>header</MyHeader>
+      <Header>About</Header>
     </AboutPageWrapper>
   );
 };

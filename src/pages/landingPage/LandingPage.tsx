@@ -1,8 +1,15 @@
 import React, { FC } from 'react';
-import { LandingPageWrapper } from './landingPage.css';
+import { LandingPageWrapper, Header } from './landingPage.css';
+import LandingImage from '../../assets/A.png';
 
 const LandingPage: FC = () => {
-  return <LandingPageWrapper>Landing Page</LandingPageWrapper>;
+  return (
+    <LandingPageWrapper>
+      <Header>Anne Bozack</Header>
+
+      <img src={LandingImage} />
+    </LandingPageWrapper>
+  );
 };
 
 export default LandingPage;

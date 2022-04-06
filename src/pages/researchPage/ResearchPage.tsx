@@ -1,8 +1,12 @@
 import React, { FC } from 'react';
-import { ResearchPageWrapper } from './researchPage.css';
+import { ResearchPageWrapper, Header } from './researchPage.css';
 
 const ResearchPage: FC = () => {
-  return <ResearchPageWrapper>Research Page</ResearchPageWrapper>;
+  return (
+    <ResearchPageWrapper>
+      <Header>Reasearch</Header>
+    </ResearchPageWrapper>
+  );
 };
 
 export default ResearchPage;

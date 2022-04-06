@@ -1,8 +1,12 @@
 import React, { FC } from 'react';
-import { ProjectsPageWrapper } from './projectsPage.css';
+import { ProjectsPageWrapper, Header } from './projectsPage.css';
 
 const ProjectsPage: FC = () => {
-  return <ProjectsPageWrapper>Projects Page</ProjectsPageWrapper>;
+  return (
+    <ProjectsPageWrapper>
+      <Header>Projects</Header>
+    </ProjectsPageWrapper>
+  );
 };
 
 export default ProjectsPage;

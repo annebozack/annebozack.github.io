@@ -6,5 +6,6 @@ export const ResearchPageWrapper = styled.div`
   flex: 1;
   width: 100%;
   align-items: center;
-  justify-content: center;
 `;
+
+export const Header = styled.h1``;

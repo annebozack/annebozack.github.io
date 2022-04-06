@@ -6,9 +6,6 @@ export const AboutPageWrapper = styled.div`
   flex: 1;
   width: 100%;
   align-items: center;
-  justify-content: center;
 `;
 
-export const MyHeader = styled.h1`
-  margin: 20px;
-`;
+export const Header = styled.h1``;
