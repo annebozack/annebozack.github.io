@@ -15,8 +15,6 @@ const routeHeaders: { [mykey in NavRoutes]: string } = {
 const Navigation: FC = () => {
   const { pathname } = useLocation();
 
-  console.log(location);
-
   return (
     <NavBar>
       <Hamburger />

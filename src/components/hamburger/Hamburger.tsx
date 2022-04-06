@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { NavRoutes } from '../../types';
-import { HamburgerWrapper, HamburgerPatty, HamburgerContent, NavItem } from './hamburger.css';
+import { HamburgerWrapper, HamburgerPatty, HamburgerContent, NavItem, GoogleyEye, Nose } from './hamburger.css';
 
 const navConfig = [
   { display: 'Anne Bozack', route: NavRoutes.Root },
@@ -27,7 +27,12 @@ const Hamburger: FC = () => {
       <HamburgerPatty />
       <HamburgerPatty />
       <HamburgerPatty />
-      <HamburgerContent isOpen={isOpen}>{navigationOptions}</HamburgerContent>
+      <HamburgerContent isOpen={isOpen}>
+        {navigationOptions}
+        <GoogleyEye side="left" />
+        <Nose />
+        <GoogleyEye side="right" />
+      </HamburgerContent>
     </HamburgerWrapper>
   );
 };

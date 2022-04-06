@@ -1,13 +1,11 @@
 import React, { FC } from 'react';
-import { LandingPageWrapper, Header } from './landingPage.css';
-import LandingImage from '../../assets/letters-white.gif';
+import { LandingPageWrapper, LandingImage } from './landingPage.css';
+import Background from '../../assets/background.gif';
 
 const LandingPage: FC = () => {
   return (
     <LandingPageWrapper>
-      <Header>Anne Bozack</Header>
-
-      {/* <img src={LandingImage} /> */}
+      <LandingImage src={Background} />
     </LandingPageWrapper>
   );
 };
