@@ -3,5 +3,4 @@ export enum NavRoutes {
   About = '/about',
   Reasearch = '/research',
   Projects = '/projects',
-  Contact = '/contact',
 }
