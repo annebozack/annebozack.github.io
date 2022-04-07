@@ -1,29 +1,25 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
+import { useLocation } from 'react-router-dom';
+import { NavRoutes } from '../..//types';
 
 import Hamburger from '../hamburger/Hamburger';
-import { NavRoutes } from '../../types';
-import { Header, NavItem } from './navigation.css';
+import { Header, NavBar } from './navigation.css';
 
-const navConfig = [
-  { display: 'Anne Bozack', route: NavRoutes.Root },
-  { display: 'About', route: NavRoutes.About },
-  { display: 'Research', route: NavRoutes.Reasearch },
-  { display: 'Projects', route: NavRoutes.Projects },
-];
+const routeHeaders: { [mykey in NavRoutes]: string } = {
+  [NavRoutes.Root]: 'Anne Bozack',
+  [NavRoutes.About]: 'About',
+  [NavRoutes.Reasearch]: 'Research',
+  [NavRoutes.Projects]: 'Projects',
+};
 
 const Navigation: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const navigationOptions = navConfig.map(({ display, route }) => (
-    <NavItem key={route} to={route}>
-      {display}
-    </NavItem>
-  ));
+  const { pathname } = useLocation();
 
   return (
-    <Hamburger isOpen={isOpen} setIsOpen={setIsOpen}>
-      {navigationOptions}
-    </Hamburger>
+    <NavBar>
+      <Hamburger />
+      <Header>{routeHeaders[pathname as NavRoutes]}</Header>
+    </NavBar>
   );
 };
 

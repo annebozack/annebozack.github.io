@@ -1,15 +1,18 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-export const Header = styled(Link)`
+export const Header = styled.h1`
   color: black;
   font-size: 16pt;
   margin-bottom: 20px;
+  margin: 0;
 `;
 
-export const NavItem = styled(Link)`
-  color: black;
-  font-size: 20pt;
-  font-weight: 600;
-  margin-bottom: 10px;
+export const NavBar = styled.div`
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  position: sticky;
+  top: 0;
 `;
