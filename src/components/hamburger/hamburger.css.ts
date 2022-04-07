@@ -35,6 +35,7 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  white-space: no-wrap;
   border: 3px solid black;
   border-radius: 25px;
   background-color: white;
@@ -86,7 +87,6 @@ export const NavItem = styled(Link)`
   font-size: 16pt;
   font-weight: 600;
   margin-bottom: 10px;
-  min-width: max-content;
 
   @media ${device.laptop} {
     font-size: 20pt;
