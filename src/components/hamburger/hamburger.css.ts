@@ -35,7 +35,7 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  white-space: no-wrap;
+  white-space: nowrap;
   border: 3px solid black;
   border-radius: 25px;
   background-color: white;
