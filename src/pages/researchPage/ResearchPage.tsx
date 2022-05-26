@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ResearchPageWrapper, Header } from './researchPage.css';
+import { ResearchPageWrapper } from './researchPage.css';
 
 const ResearchPage: FC = () => {
   return (
