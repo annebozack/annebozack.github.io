@@ -9,3 +9,11 @@ export const ProjectsPageWrapper = styled.div`
 `;
 
 export const Header = styled.h1``;
+
+export const StyledLink = styled.a`
+  text-decoration: underline;
+
+  &:visited {
+    color: blue;
+  }
+`;

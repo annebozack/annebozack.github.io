@@ -11,11 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
   #root {
     display: flex;
-    height:100%;  
-  }
-
-  a:link {
-    text-decoration: none;
+    height:100vh;  
   }
 
   button {

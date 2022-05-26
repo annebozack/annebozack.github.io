@@ -1,3 +1,4 @@
+import { device } from '../../styles/devices';
 import styled from 'styled-components';
 
 export const AboutPageWrapper = styled.div`
@@ -8,4 +9,21 @@ export const AboutPageWrapper = styled.div`
   align-items: center;
 `;
 
+export const Content = styled.div`
+  font-size: 20px;
+  line-height: 1.5;
+
+  @media ${device.laptop} {
+    font-size: 24px;
+  }
+`;
+
 export const Header = styled.h1``;
+
+export const StyledLink = styled.a`
+  text-decoration: underline;
+
+  &:visited {
+    color: blue;
+  }
+`;

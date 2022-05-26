@@ -9,6 +9,7 @@ import LandingPage from '../../pages/landingPage/LandingPage';
 import AboutPage from '../../pages/aboutPage/AboutPage';
 import ResearchPage from '../../pages/researchPage/ResearchPage';
 import ProjectsPage from '../../pages/projectsPage/ProjectsPage';
+import Footer from '../footer/Footer';
 
 const App: FC = () => {
   return (
@@ -25,6 +26,8 @@ const App: FC = () => {
               <Route path={NavRoutes.Projects} element={<ProjectsPage />} />
             </Routes>
           </Content>
+
+          <Footer />
         </AppWrapper>
       </BrowserRouter>
     </>

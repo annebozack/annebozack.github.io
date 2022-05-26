@@ -87,6 +87,7 @@ export const NavItem = styled(Link)`
   font-size: 16pt;
   font-weight: 600;
   margin-bottom: 10px;
+  text-decoration: none;
 
   @media ${device.laptop} {
     font-size: 20pt;
