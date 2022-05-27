@@ -7,6 +7,7 @@ export const HamburgerWrapper = styled.button`
   position: absolute;
   flex-direction: column;
   left: 10px;
+  cursor: pointer;
   @media ${device.laptop} {
     left: 20px;
   }
@@ -41,12 +42,13 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
   background-color: white;
   padding: 15px 15px 40px 15px;
   top: 50px;
-  left: ${({ isOpen }) => (isOpen ? '-15px' : '-500px')};
-  transition: all 0.4s ease-in-out;
+  left: ${({ isOpen }) => (isOpen ? '-5px' : '-160px')};
+  transition: all 0.3s ease-in-out;
 
   @media ${device.laptop} {
     border: 5px solid black;
     padding: 15px 15px 50px 15px;
+    left: ${({ isOpen }) => (isOpen ? '-5px' : '-195px')};
   }
 
   &:before {
@@ -82,12 +84,17 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
   }
 `;
 
-export const NavItem = styled(Link)`
+interface NavItemProps {
+  isOpen: boolean;
+}
+export const NavItem = styled(Link)<NavItemProps>`
   color: black;
   font-size: 16pt;
   font-weight: 600;
   margin-bottom: 10px;
   text-decoration: none;
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  transition: opacity 0.3s ease-in-out;
 
   @media ${device.laptop} {
     font-size: 20pt;

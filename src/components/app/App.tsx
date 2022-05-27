@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { FC, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { NavRoutes } from '../../types';
 
 import GlobalStyle from '../../global.css';
@@ -12,24 +12,28 @@ import ProjectsPage from '../../pages/projectsPage/ProjectsPage';
 import Footer from '../footer/Footer';
 
 const App: FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter>
-        <AppWrapper>
-          <Navigation />
-          <Content>
-            <Routes>
-              <Route path={NavRoutes.Root} element={<LandingPage />} />
-              <Route path={NavRoutes.About} element={<AboutPage />} />
-              <Route path={NavRoutes.Reasearch} element={<ResearchPage />} />
-              <Route path={NavRoutes.Projects} element={<ProjectsPage />} />
-            </Routes>
-          </Content>
+      <AppWrapper>
+        <Navigation />
+        <Content>
+          <Routes>
+            <Route path={NavRoutes.Root} element={<LandingPage />} />
+            <Route path={NavRoutes.About} element={<AboutPage />} />
+            <Route path={NavRoutes.Reasearch} element={<ResearchPage />} />
+            <Route path={NavRoutes.Projects} element={<ProjectsPage />} />
+          </Routes>
+        </Content>
 
-          <Footer />
-        </AppWrapper>
-      </BrowserRouter>
+        <Footer />
+      </AppWrapper>
     </>
   );
 };

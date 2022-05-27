@@ -5,6 +5,7 @@ export const AppWrapper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+  min-height: 100vh;
 `;
 
 export const Content = styled.div`
