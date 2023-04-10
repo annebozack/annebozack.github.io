@@ -41,7 +41,7 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
   border-radius: 25px;
   background-color: white;
   padding: 15px 15px 40px 15px;
-  top: 50px;
+  top: 60px;
   left: ${({ isOpen }) => (isOpen ? '-5px' : '-160px')};
   transition: all 0.3s ease-in-out;
 

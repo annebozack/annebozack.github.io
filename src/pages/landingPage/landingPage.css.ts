@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../styles/devices';
 
 export const LandingPageWrapper = styled.div`
   display: flex;
@@ -6,10 +7,14 @@ export const LandingPageWrapper = styled.div`
   flex: 1;
   width: 100%;
   align-items: center;
-  overflow: hidden;
 `;
 
 export const LandingImage = styled.img`
-  width: 1300px;
-  margin-top: -100px;
+  width: 400px;
+  margin-top: 100px;
+
+  @media ${device.laptop} {
+    width: 900px;
+    margin-top: 0;
+  }
 `;

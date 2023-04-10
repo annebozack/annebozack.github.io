@@ -6,7 +6,6 @@ export const FooterWrapper = styled.div`
   justify-content: flex-start;
   background: white;
   padding: 10px 20px 20px 20px;
-  border-top: 3px solid black;
   flex-wrap: wrap;
 `;
 

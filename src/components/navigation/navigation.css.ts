@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const Header = styled.h1`
   color: black;
   font-size: 16pt;
-  margin-bottom: 20px;
-  margin: 0;
 `;
 
 export const NavBar = styled.div`
@@ -12,8 +10,5 @@ export const NavBar = styled.div`
   position: relative;
   align-items: center;
   justify-content: center;
-  min-height: 70px;
-  position: sticky;
-  top: 0;
   background: rgba(255, 255, 255, 0.75);
 `;
