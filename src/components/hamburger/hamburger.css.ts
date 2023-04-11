@@ -85,7 +85,7 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
 `;
 
 interface NavItemProps {
-  isOpen: boolean;
+  $isOpen: boolean;
 }
 export const NavItem = styled(Link)<NavItemProps>`
   color: black;
@@ -93,7 +93,7 @@ export const NavItem = styled(Link)<NavItemProps>`
   font-weight: 600;
   margin-bottom: 10px;
   text-decoration: none;
-  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
   transition: opacity 0.3s ease-in-out;
 
   @media ${device.laptop} {

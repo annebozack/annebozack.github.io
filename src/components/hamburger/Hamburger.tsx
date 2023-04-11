@@ -13,7 +13,7 @@ const Hamburger: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigationOptions = navConfig.map(({ display, route }) => (
-    <NavItem isOpen={isOpen} key={route} to={route}>
+    <NavItem $isOpen={isOpen} key={route} to={route}>
       {display}
     </NavItem>
   ));

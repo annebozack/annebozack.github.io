@@ -10,7 +10,8 @@ export const AboutPageWrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  font-size: 20px;
+  font-size: 16px;
+  padding: 0 30px;
   line-height: 1.5;
 
   @media ${device.laptop} {

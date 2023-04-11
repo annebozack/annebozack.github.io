@@ -5,7 +5,8 @@ export const ResearchPageWrapper = styled.div`
   flex-direction: column;
   flex: 1;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
+  padding: 0 20px;
 `;
 
 export const Header = styled.h1``;
