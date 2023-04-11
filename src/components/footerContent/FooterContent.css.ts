@@ -4,7 +4,7 @@ import { device } from '../../styles/devices';
 export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   background: white;
   padding: 10px 10px 10px 10px;
   flex-wrap: wrap;

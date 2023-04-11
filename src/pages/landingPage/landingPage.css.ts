@@ -14,7 +14,7 @@ export const LandingImage = styled.img`
   margin-top: 100px;
 
   @media ${device.laptop} {
-    width: 850px;
+    width: 800px;
     margin-top: 50px;
   }
 `;
