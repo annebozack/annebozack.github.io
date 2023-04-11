@@ -5,10 +5,10 @@ const AboutPage: FC = () => {
   return (
     <AboutPageWrapper>
       <Content>
-        Anne Bozack is a postdoctoral fellow in the{' '}
+        Anne Bozack is a postdoctoral fellow in the
         <StyledLink target="_blank" href="https://publichealth.berkeley.edu/research/cardenas-lab/" rel="noreferrer">
           Cardenas lab
-        </StyledLink>{' '}
+        </StyledLink>
         in the Division of Environmental Health Sciences in the University of California, Berkeley School of Public
         Health. Her research focuses on the impact of environmental exposures on the molecular level and effects of
         nutrition. Her current projects investigate the associations between chronic exposure to metals and DNA
