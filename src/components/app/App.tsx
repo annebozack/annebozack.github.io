@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { NavRoutes } from '../../types';
 
 import Navigation from '../navigation/Navigation';
-import { Content } from './App.css';
+import { AppWrapper, Content } from './App.css';
 import LandingPage from '../../pages/landingPage/LandingPage';
 import AboutPage from '../../pages/aboutPage/AboutPage';
 import ResearchPage from '../../pages/researchPage/ResearchPage';
@@ -19,19 +19,23 @@ const App: FC = () => {
   }, [location]);
 
   return (
-    <AppShell
-      padding={0}
-      header={
-        <Header style={{ background: 'rgba(255, 255, 255, 0.75)' }} height={60}>
-          <Navigation />
-        </Header>
-      }
-      footer={
-        <Footer height={60}>
-          <FooterContent />
-        </Footer>
-      }
-    >
+    // <AppShell
+    // padding={0}
+    // header={
+    //   <Header style={{ background: 'rgba(255, 255, 255, 0.75)' }} height={60}>
+    //     <Navigation />
+    //   </Header>
+    // }
+    // footer={
+    // <Footer height={60}>
+    //   <FooterContent />
+    // </Footer>
+    // }
+    // >
+    <AppWrapper>
+      {/* <Header style={{ background: 'rgba(255, 255, 255, 0.75)' }} height={60}> */}
+      <Navigation />
+      {/* </Header> */}
       <Content>
         <Routes>
           <Route path={NavRoutes.Root} element={<LandingPage />} />
@@ -40,7 +44,10 @@ const App: FC = () => {
           <Route path={NavRoutes.Projects} element={<ProjectsPage />} />
         </Routes>
       </Content>
-    </AppShell>
+      {/* <Footer height={60}> */}
+      <FooterContent />
+      {/* </Footer> */}
+    </AppWrapper>
   );
 };
 

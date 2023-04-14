@@ -41,7 +41,7 @@ export const HamburgerContent = styled.div<HamburgerContentProps>`
   border-radius: 25px;
   background-color: white;
   padding: 15px 15px 40px 15px;
-  top: 60px;
+  top: 50px;
   left: ${({ isOpen }) => (isOpen ? '-5px' : '-160px')};
   transition: all 0.3s ease-in-out;
 
@@ -145,7 +145,7 @@ export const GoogleyEye = styled.div<GoogleyEyeProps>`
 export const Nose = styled.div`
   content: '';
   position: absolute;
-  top: 186px;
+  top: 184px;
   left: 77px;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;

@@ -6,16 +6,21 @@ export const FooterWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   background: white;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 20px 20px;
+  border-top: 1px solid #eeeeee;
   flex-wrap: wrap;
   font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   @media ${device.laptop} {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background: white;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 30px 20px 30px;
     flex-wrap: wrap;
     font-size: 16px;
   }
